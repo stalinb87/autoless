@@ -1,0 +1,15 @@
+{
+  "name": "emarket_b",
+  "version": "0.0.0",
+  "main": "mon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "BSD",
+  "description": "ERROR: No README.md file found!",
+  "dependencies": {
+    "less": "~1.3.1",
+    "watchit": "0.0.4",
+    "growl": "~1.6.1"
+  }
+}

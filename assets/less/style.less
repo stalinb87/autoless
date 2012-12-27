@@ -1,0 +1,155 @@
+@import "bootstrap.less";
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "elements.less"; // Modify this for custom colors, font-sizes, etc
+.header{
+	height: 108px;
+}
+.top .navbar i{
+	margin-right: 5px;
+	margin-top: 1px;
+}
+.top .user-nav .icon-user{
+	color: @black;
+}
+.navbar .container { height: 2em; }
+.header h1 a.logo{
+	display: block;
+	width: 199px;
+	height: 74px;
+	text-indent: -999999px;
+	background: url(../img/emarket-logo.png) no-repeat;
+	margin-right: 13px;
+}
+.menu .navbar .navbar-inner {
+	max-height: 60px;
+}
+.menu .navbar-search .btn-group{
+	margin-top: 0;
+	margin-left: -2px;
+}
+.menu .navbar-search .input-large{
+	width: 350px;
+}
+.menu .navbar-search {
+	max-width: 338px;
+	margin-top: 13px;
+}
+.menu .navbar-search .search-options {
+	margin-top: -7px;
+margin-left: 2px;
+}
+
+.menu .navbar-search .search-options label, .menu .navbar-search .search-options strong{
+	float: left;
+	color: @white;
+	font-size: 11px;
+}
+.menu .navbar-search .search-options strong{
+	margin-right: 10px;
+}
+.menu .navbar-search .search-options label{
+	margin-right: 28px;
+}
+.menu .navbar-search .search-options label.last{
+	margin-right: 0;
+}
+.menu .navbar-search .search-options input{
+	margin-top: -1px;
+
+}
+
+//content
+//_____________
+
+.content .banner120x600{
+	width: 120px;
+	height: 600px;
+	float: right;
+	margin-top: 10px;
+}
+.content .nav-stacked {
+	font-size: 12px;
+}
+.content .nav-stacked > li > a{
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+.content .nav-stacked .navheader{
+	font-size: 18px;
+	.border-radius(20px, 20px, 0, 0);
+}
+.content .nav-stacked .navheader a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover{
+	background-color: #45AEEA;
+	color: white;
+}
+.content .nav-stacked .icon-chevron-right, .content .nav-stacked .icon-chevron-up, .content .nav-stacked .icon-chevron-down {
+float: right;
+margin-top: 2px;
+margin-right: -6px;
+opacity: .25;
+font-size: 16px;
+color: @black;
+font-weight: bold;
+
+}
+.content .nav-stacked .navheader .icon-chevron-up, .content .nav-stacked .navheader .icon-chevron-down{
+	font-size: 24px;
+	margin-top: 0;
+}
+.icon-chevron-down{
+	opacity: 1;
+	cursor: pointer;
+}
+
+//box
+//________________
+.box{
+	width: 100%;
+}
+.box .box-header{
+	width: 100%;
+	.border-radius(10px,0,0,10px);
+	.gradient(@boxHeaderBackground, @boxHeaderBackground, @boxHeaderBackgroundHighlight);
+
+}
+.box .box-header h3{
+	margin-left: 10px;
+	color: @white;
+	font-size: 20px;
+	margin-bottom: 0;
+	font-weight: 0;
+}
+.box-content{
+	padding:10px;
+	border: 1px solid #ddd;
+}
+.box-content-noborder{
+	padding:10px;
+
+}
+.box-content-clear{
+
+}
+.box .nav-tabs.nav-stacked > li:first-child > a{
+	.border-radius(0,0,0,0);
+}
+
+//box alternative
+
+.box-alternative .box-header{
+	@shine: lighten(@boxHeaderBackgroundAlternative,5%);
+	.gradient(@boxHeaderBackgroundAlternative, @boxHeaderBackgroundAlternative, @boxHeaderBackgroundHighlightAlternative);
+}
+.box-content .thumbnails > li{
+	margin-left: 35px;
+}
+.box-content .thumbnails > li p{
+	text-align:center;
+}
+
