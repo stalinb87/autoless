@@ -41,10 +41,11 @@ function compila(archivo) {
       });
     });
   });
+
 }
 
 watchit('./assets/less/', {recurse: true, retain: true, include: true}, function (event, archivo) {
   if ((event == 'create' || event == 'change') && /.less$/.test(archivo)) {
-    compila(archivo);
+    compila('assets/less/style.less');
   }
-})
+});

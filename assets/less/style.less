@@ -1,6 +1,7 @@
-@import "bootstrap.less";
-@import "variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "elements.less"; // Modify this for custom colors, font-sizes, etc
+@import "bootstrap.less";
+
+
 .header{
 	height: 108px;
 }
@@ -11,7 +12,7 @@
 .top .user-nav .icon-user{
 	color: @black;
 }
-.navbar .container { height: 2em; }
+
 .header h1 a.logo{
 	display: block;
 	width: 199px;
@@ -22,21 +23,29 @@
 }
 .menu .navbar .navbar-inner {
 	max-height: 60px;
+	.rounded(10px);
 }
-.menu .navbar-search .btn-group{
-	margin-top: 0;
-	margin-left: -2px;
+.menu .form-search .btn-group .btn{
+	height: 32px;
+	.rounded(0px);
+}
+.menu .form-search .btn-group .dropdown-toggle{
+	.border-radius(15px, 15px);
+}
+
+.menu .form-search .btn-group{
+margin-top: 1px;
 }
 .menu .navbar-search .input-large{
-	width: 350px;
+	width: 420px;
 }
 .menu .navbar-search {
 	max-width: 338px;
 	margin-top: 13px;
 }
 .menu .navbar-search .search-options {
-	margin-top: -7px;
-margin-left: 2px;
+	margin-top: -1px;
+margin-left: 15px;
 }
 
 .menu .navbar-search .search-options label, .menu .navbar-search .search-options strong{
@@ -57,7 +66,12 @@ margin-left: 2px;
 	margin-top: -1px;
 
 }
-
+.navbar-search .search-query{
+	.rounded(15px)
+}
+.form-search .search-query{
+	.rounded(15px)
+}
 //content
 //_____________
 
@@ -68,7 +82,7 @@ margin-left: 2px;
 	margin-top: 10px;
 }
 .content .nav-stacked {
-	font-size: 12px;
+	font-size: 14px;
 }
 .content .nav-stacked > li > a{
 	padding-top: 5px;
@@ -147,9 +161,10 @@ font-weight: bold;
 	.gradient(@boxHeaderBackgroundAlternative, @boxHeaderBackgroundAlternative, @boxHeaderBackgroundHighlightAlternative);
 }
 .box-content .thumbnails > li{
-	margin-left: 35px;
+	margin-left: 51px;
 }
 .box-content .thumbnails > li p{
 	text-align:center;
 }
+//
 

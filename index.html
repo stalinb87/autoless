@@ -3,9 +3,11 @@
 <head>
   <title>Emarket</title>
   <meta http-equiv="Content-Type" content="text/html; Charset=UTF-8" />
-  <!-- Bootstrap -->
+  <!-- Bootstrap - - >
   <link rel="stylesheet/less" type="text/css" href="assets/less/bootstrap.less">
   <link rel="stylesheet/less" type="text/css" href="assets/less/style.less">
+  -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
   <div class="top">
@@ -24,7 +26,7 @@
   <!-- header -->
   <div class="header">
     <h1><a href="" class="logo pull-left">Emarket Logo</a></h1>
-    <div class="banner768x90 pull-left">
+    <div class="banner768x90 pull-right">
       <img src="http://placehold.it/728x90" />
     </div>
   </div>
@@ -36,20 +38,22 @@
      <!-- nav bar inner -->
      <div class="navbar-inner">
       <!-- form -->
-      <form class="navbar-search pull-left">
+      <form class="navbar-search pull-left form-search">
         <div class="input-append">
-          <input  type="text" class="input-large" placeholder="Buscar...">
-          <div class="btn-group">
-            <button class="btn">Buscar</button>
-            <button class="btn dropdown-toggle" data-toggle="dropdown">
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="">Búsqueda Avanzada</a></li>
-              <li><a href="">Ubicación</a></li>
-            </ul>
-          </div>
+         <input type="text" class="input-large search-query" placeholder="Buscar...">
+         <div class="btn-group">
+          <button class="btn">Buscar</button>
+          <button class="btn dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                  <span class="caret"></span>
+          </button>
+    <ul class="dropdown-menu">
+      <li><a href="">Busqueda avanzada</a></li>
+      <li><a href="">Por ubicación</a></li>
+    </ul>
+         </div>
+
         </div>
+
         <div class="search-options">
           <strong>Buscar en:</strong>
           <label>
@@ -234,6 +238,6 @@
 <!-- end container -->
 <script src="assets/js/jquery-1.8.3.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/less-1.3.1.min.js"></script>
+<!-- <script src="assets/js/less-1.3.1.min.js"></script> -->
 </body>
 </html>
